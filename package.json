@@ -1,0 +1,17 @@
+{
+  "name": "hw20_star",
+  "version": "1.0.0",
+  "description": "Сделайте страницу-дашборд, которая показывает данные о задачах в красивом и удобном виде. Данные хранятся в JSON. При разработке используйте как минимум 3 библиотеки (использовать ChartJS обязательно).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ElenLen",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bootstrap": "^4.5.2",
+    "chart.js": "^4.4.6"
+  }
+}

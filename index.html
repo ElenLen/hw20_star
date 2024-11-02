@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Планировщик задач</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Статистика задач</div>
+          <div class="card-body">
+            <canvas id="tasksChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">Добавить новую задачу</div>
+          <div class="card-body">
+            <input type="text" id="newTaskTitle" placeholder="Название задачи" class="form-control" />
+
+            <select id="newTaskStatus" class="form-control">
+              <option value="Выполнено">Выполнено</option>
+              <option value="В процессе">В процессе</option>
+              <option value="Не начато">Не начато</option>
+            </select>
+
+            <button id="addTaskButton" class="btn btn-success mt-2">Добавить задачу</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="form-group card-header">
+            <label for="statusFilter">Фильтр по статусу</label>
+            <select id="statusFilter" class="form-control">
+              <option value="all">Все</option>
+              <option value="Выполнено">Выполнено</option>
+              <option value="В процессе">В процессе</option>
+              <option value="Не начато">Не начато</option>
+            </select>
+          </div>
+
+          <div class="card-header">Список задач</div>
+          <div class="card-body">
+            <ul id="tasksList" class="list-group"></ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- <script src="./node_modules/bootstrap/dist/css/bootstrap.min.css"></script> -->
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+  <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
